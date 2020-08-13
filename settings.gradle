@@ -1,0 +1,9 @@
+include ':app'
+rootProject.name = "AR_Java"
+
+// Add these lines:
+include ':sceneform'
+project(':sceneform').projectDir=new File('sceneformsrc/sceneform')
+
+include ':sceneformux'
+project(':sceneformux').projectDir=new File('sceneformux/ux')
